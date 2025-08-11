@@ -1,12 +1,12 @@
 <?php
-$nota1 = 6; 
-$nota2 = 8; 
+$nota1 = readline ("digite a 1° nota: "); 
+$nota2 = readline ("digite a 2° nota: "); 
 $media = ($nota1 + $nota2) / 2; 
 
 if ($media >= 7) {
-    echo "Aluno aprovado";
+    echo "Aluno com a nota $media aprovado";
 } else {
-    echo "Aluno reprovado";
+    echo "Aluno com a nota $media reprovado";
 }
 ?>
 
