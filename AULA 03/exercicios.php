@@ -119,17 +119,13 @@ if ($temp <= 15) {
 ?>
 
 <?php
-for ($tentativas = 0; $tentativas < 5; $tentativas++) {
-    // Exibe o menu
     echo "Menu:\n";
     echo "1 - Olá\n";
     echo "2 - Data Atual\n";
     echo "3 - Sair\n";
     
-    // Obtém a escolha do usuário
     $opcao = (int)readline("Escolha uma opção: ");
     
-    // Processa a escolha
     switch ($opcao) {
         case 1:
             echo "Olá! Bem-vindo ao programa.\n\n";
@@ -141,15 +137,9 @@ for ($tentativas = 0; $tentativas < 5; $tentativas++) {
             
         case 3:
             echo "Saindo do programa...\n";
-            exit();  // Termina o programa imediatamente
+            exit();  
             
         default:
             echo "Opção inválida! Tente novamente.\n\n";
     }
-    
-    // Se for a última tentativa, avisa o usuário
-    if ($tentativas == 4) {
-        echo "Número máximo de tentativas alcançado. Encerrando...\n";
-    }
-}
 ?>
