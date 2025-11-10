@@ -1,4 +1,4 @@
-<?
+<?php
 class Bebida {
     private $nome;
     private $categoria;
@@ -9,18 +9,18 @@ class Bebida {
     public function __construct($nome, $categoria, $volume, $valor, $qtde) {
         $this->nome = $nome;
         $this->categoria = $categoria;
+        $this->volume = $volume;
         $this->valor = $valor;
         $this->qtde = $qtde;
-        $this->volume = $volume;
     }
 
-     public function getNome() {
+    public function getNome() {
         return $this->nome;
     }
 
     public function setNome($nome) {
         $this->nome = $nome;
-        return $this; 
+        return $this;
     }
 
     public function getCategoria() {
@@ -29,18 +29,17 @@ class Bebida {
 
     public function setCategoria($categoria) {
         $this->categoria = $categoria;
-        return $this; 
+        return $this;
     }
 
-     public function getVolume() {
+    public function getVolume() {
         return $this->volume;
     }
 
     public function setVolume($volume) {
         $this->volume = $volume;
-        return $this; 
+        return $this;
     }
-
 
     public function getValor() {
         return $this->valor;
@@ -48,7 +47,7 @@ class Bebida {
 
     public function setValor($valor) {
         $this->valor = $valor;
-        return $this; 
+        return $this;
     }
 
     public function getQtde() {
@@ -57,14 +56,7 @@ class Bebida {
 
     public function setQtde($qtde) {
         $this->qtde = $qtde;
-        return $this; 
+        return $this;
     }
-
-   
-
-
 }
-
-
-
 ?>
