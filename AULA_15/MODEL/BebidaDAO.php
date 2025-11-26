@@ -43,11 +43,11 @@ class BebidaDAO {
         
         // Garante que o diretório existe
         $diretorio = dirname($this->arquivoJson);
-        if (!is_dir($diretorio)) {
-            mkdir($diretorio, 0777, true);
-        }
-        
-        file_put_contents($this->arquivoJson, json_encode($dadosParaSalvar, JSON_PRETTY_PRINT));
+    if (!is_dir($diretorio)) {
+        mkdir($diretorio, 0777, true);
+    }
+    
+    file_put_contents($this->arquivoJson, json_encode($dadosParaSalvar, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
     }
 
     // CREATE

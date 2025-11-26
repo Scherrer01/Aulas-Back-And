@@ -1,11 +1,4 @@
 {
-    "Del Vale": {
-        "nome": "Del Vale",
-        "categoria": "Suco",
-        "volume": "600",
-        "valor": 8,
-        "qtde": "25"
-    },
     "Monster": {
         "nome": "Monster",
         "categoria": "Energético",
@@ -21,3 +14,7 @@
         "qtde": "14"
     }
 }
+
+
+
+
